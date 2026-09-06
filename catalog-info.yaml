@@ -1,0 +1,25 @@
+# Gerado por fernando-moretes/platform. Não edite aqui: mude no orquestrador e
+# rode `make rollout`. É o que o Backstage (backstage.home.lab) lê deste repo.
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: app-solution-architecture-mcp-toolkit
+  description: Bilingual MCP toolkit for ADRs, threat modeling, Well-Architected review and governed AI architecture workflows.
+  annotations:
+    github.com/project-slug: fernandofatech/app-solution-architecture-mcp-toolkit
+    backstage.io/source-location: url:https://github.com/fernandofatech/app-solution-architecture-mcp-toolkit
+    sonarqube.org/project-key: app-solution-architecture-mcp-toolkit
+  links:
+    - url: https://github.com/fernandofatech/app-solution-architecture-mcp-toolkit/actions
+      title: Actions
+      icon: github
+    - url: https://sonarqube.home.lab/dashboard?id=app-solution-architecture-mcp-toolkit
+      title: SonarQube
+    - url: https://defectdojo.home.lab/product?name=app-solution-architecture-mcp-toolkit
+      title: DefectDojo
+  tags: [website, ci-python.yml]
+spec:
+  type: website
+  lifecycle: production
+  owner: group:plataforma
+  system: homelab
