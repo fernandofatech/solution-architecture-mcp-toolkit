@@ -7,8 +7,12 @@ metadata:
   description: "Bilingual MCP toolkit for ADRs, threat modeling, Well-Architected review and governed AI architecture workflows."
   annotations:
     github.com/project-slug: fernandofatech/app-solution-architecture-mcp-toolkit
-    backstage.io/source-location: url:https://github.com/fernandofatech/app-solution-architecture-mcp-toolkit
+    # URL da arvore com barra final: e dela que o TechDocs resolve `dir:.`;
+    # sem a barra ele sobe um nivel e pede api.github.com/repos/<dono> (404).
+    backstage.io/source-location: url:https://github.com/fernandofatech/app-solution-architecture-mcp-toolkit/tree/main/
     sonarqube.org/project-key: app-solution-architecture-mcp-toolkit
+    # TechDocs: mkdocs.yml + docs/ do proprio repositorio (rolados pelo platform)
+    backstage.io/techdocs-ref: dir:.
   links:
     - url: https://github.com/fernandofatech/app-solution-architecture-mcp-toolkit/actions
       title: Actions
